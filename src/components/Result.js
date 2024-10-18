@@ -45,7 +45,7 @@ export default function Result({ props }) {
                         className="h-4 w-auto ml-auto block"
                     />
                 </div>
-                <div className="mb-8">
+                <div className="mb-1 md:mb-8">
                 <Image
                     src="/images/icon-drip.png"
                     alt="Icon Drip"
@@ -55,13 +55,13 @@ export default function Result({ props }) {
                 />
                 </div>
 
-                <div className="mb-8">
+                <div className="mb-1 md:mb-8">
                     <h2 className="text-3xl font-SukhumvitSet font-bold text-center text-white">
                         การประเมินโรคตาแห้ง
                     </h2>
                 </div>
 
-                <div className="mb-8">                    
+                <div className="mb-1 md:mb-8">                    
                     <Image
                         src={`/images/Result-box-${level}@4x.png`}
                         alt="Result"
@@ -71,13 +71,13 @@ export default function Result({ props }) {
                     />
                 </div>
                     
-                <div className="mb-4">
+                <div className="mb-0 md:mb-4">
                     <p className="text-2xl font-SukhumvitSet font-bold text-center text-white">
                         ปรึกษาเภสัชกรเพิ่มเติม
                     </p>
                 </div>
 
-                <div className="mb-8">                    
+                <div className="mb-1 md:mb-8">                    
                     <Image
                         src="/images/Result-btn@4x.png"
                         alt="Result"
