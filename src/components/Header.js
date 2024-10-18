@@ -37,6 +37,7 @@ export default function Header({ props }) {
                         alt="Page Image"
                         width={400}
                         height={400}
+                        priority={true}
                         className="w-auto h-[160px] mx-auto block"
                     />
                 </div>

@@ -67,6 +67,7 @@ export default function Result({ props }) {
                         alt="Result"
                         width={600}
                         height={600}
+                        priority={true}
                         className="w-5/6 h-auto mx-auto block"
                     />
                 </div>
