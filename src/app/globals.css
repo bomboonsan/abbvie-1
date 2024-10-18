@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* import local font */
+@font-face {
+  font-family: "SukhumvitSet";
+  src: url("./fonts/SukhumvitSet-Text.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SukhumvitSet";
+  src: url("./fonts/SukhumvitSet-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SukhumvitSet";
+  src: url("./fonts/SukhumvitSet-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SukhumvitSet";
+  src: url("./fonts/SukhumvitSet-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.Toastify__toast-body {
+  font-family: "SukhumvitSet" !important;
+}
+
+.selection-wrapper label {
+  display: none !important;
+}
+.selection-wrapper button span {
+  padding: 20px;
+}
+.selection-wrapper button svg{
+  /* width: 30px;
+  height: 30px; */
+  /* top: -5px; */
+  /* position: relative; */
+  /* right: 10px; */
+  /* margin-top: -5px;
+  margin-right: 10px; */
+  fill: white;
+  stroke: white;
+}
+.selection-wrapper li {
+  @apply font-SukhumvitSet text-lg text-black;
+}
+.select-custom {
+  @apply block w-full border-2 border-white rounded-2xl shadow-2xl shadow-black/50 p-5 font-SukhumvitSet text-white font-semibold bg-gradient-to-r from-[#65b368] to-[#243876] text-xl;
+  @apply focus:outline-none focus:ring-0;
+}
+.select-custom option {
+  /* group background white rounded-lg */
+  @apply bg-white rounded-lg text-[#243876] border border-white;
+}
+.select-custom option:first-child {
+  @apply pt-10 -mt-3;
+}
+
+
+
+.loadingpage {
+  @apply min-h-screen absolute top-0 left-0 z-50 w-full h-full bg-white flex justify-center items-center;
+  animation: loading 2s linear;
+}
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
